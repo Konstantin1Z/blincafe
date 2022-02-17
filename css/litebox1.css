@@ -1,0 +1,540 @@
+.modal,
+.modal-box {
+  z-index: 900;
+}
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.8);
+  overflow: auto;
+}
+
+.modal-box {
+  position: relative;
+  width: 40%;
+  max-width: 920px;
+  margin: 100px auto;
+  animation-name: modalbox;
+  animation-duration: .4s;
+  animation-timing-function: cubic-bezier(0,0,.3,1.6);
+}
+
+.modal-header {
+  padding-top: 5px;/*15*/
+  padding-bottom: 20px;/*40*/
+padding-left: 10px;
+padding-right: 10px;
+  background: #546E7A;
+  color: #ffffff;
+}
+.modal-header h1
+{
+  text-align: center;
+}
+
+
+.modal-body {
+  background: #ffffff;/* #ECEFF1 */
+  /*  padding: 60px 40px;*/
+  padding-top: 20px;
+
+
+
+
+ 
+
+
+
+}
+
+/* Close Button */
+.close-modal {
+  text-align: right;
+  cursor: pointer;
+  padding-top: 0px;
+margin-bottom: -10px;
+margin-right: -5px;
+}
+
+.close-mod {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.zakazbtn
+{
+margin-top: 20px; 
+margin-bottom: 20px; 
+padding: 5px; 
+background-color: orange; 
+color: blue; 
+font-size: 30px;
+display: block; 
+width: 120px;
+text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+/* Animation */
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.price
+{
+width: 170px; 
+height: 170px; 
+background-image: url('../img/рама.png'); 
+background-size: 100%; 
+background-repeat: no-repeat; 
+margin-left: 70%;
+padding-top: 0px; 
+z-index: 9999; 
+margin-bottom: -90px;
+}
+
+.blimg
+{
+background-size: 100%; 
+background-repeat: no-repeat; 
+background-position: top;
+width: 450px; 
+height: 300px; /*350*/
+margin-bottom: 0px; /*-150*/
+z-index: 0;
+
+
+position: relative;
+top: 35px;
+
+}
+
+.limg
+{
+background-image: url('../img/ug.png'); 
+background-size: 100%; 
+background-repeat: no-repeat; 
+width: 150px; 
+height: 150px; 
+margin-bottom: -120px; 
+margin-right: 70%; 
+position: relative; 
+top: 20px;
+}
+
+.p55
+{
+margin-bottom: -60px; 
+margin-left: 13px; 
+font-size: 35px; 
+position: relative; 
+top: 59px; 
+color: #b68d00;
+}
+
+.price p
+{
+transform: rotate(270deg); 
+margin-bottom: 0px; 
+margin-left: 65px; 
+font-size: 20px; 
+position: relative; 
+top: 90px; 
+color: #b68d00;
+}
+
+.rub
+{
+  font-size: 40px; 
+  color: red; 
+  font-weight: bold; 
+  margin-left: -10px; 
+  position: relative; 
+  top: 80px;
+}
+
+.rub span
+{
+font-size: 25px;
+}
+
+.titlet
+{
+background-image: url('../img/1231.png'); 
+background-size: 100%; 
+background-repeat: no-repeat; 
+height: 105px; 
+text-align: center; 
+color: black; 
+font-size: 35px; 
+line-height: 26px;
+padding-top: 15px; 
+margin-bottom: -60px; 
+margin-top: -15px; 
+z-index: 99999;
+padding-left: 5px;
+padding-right: 5px;
+
+position: relative;
+}
+
+
+a.button24 {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+
+  font-size: 20px;
+  margin-bottom: 45px;
+  position: relative;
+top: 25px;
+} 
+a.button24:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------1500---------------------------------------*/
+
+@media screen and (max-width: 1500px) 
+{
+.price
+{
+margin-left: 67%;
+}
+
+
+}
+
+/*---------------------------1370---------------------------------------*/
+
+
+
+
+/*---------------------------1213---------------------------------------*/
+@media screen and (max-width: 1213px) 
+{
+
+.titlet{font-size: 30px; padding-top: 10px; } 
+.price
+{
+margin-left: 60%;
+}
+.limg
+{
+margin-right: 60%; 
+top: 25px;
+}
+
+}
+
+/*---------------------------1175--------------------------------------*/
+
+@media screen and (max-width: 1175px) 
+{
+.blimg
+{
+background-size: 100%; 
+background-repeat: no-repeat; 
+width: 450px; 
+height: 350px; 
+margin-bottom: 0px;/*-100*/
+}  
+.price
+{
+margin-left: 60%;
+margin-bottom: -80px;
+}
+.limg
+{
+top: 30px;
+width: 120px; 
+height: 120px; 
+margin-right: 63%;
+}
+
+.modal-box 
+{
+  width: 50%;
+}
+
+}
+
+/*---------------------------1024---------------------------------------*/
+
+
+/*---------------------------950---------------------------------------*/
+
+@media screen and (max-width: 950px) 
+{
+.titlet
+{
+height: 100px; 
+text-align: center; 
+font-size: 30px; 
+padding-top: 5px; 
+margin-bottom: -61px; 
+}
+}
+/*---------------------------900---------------------------------------*/
+@media screen and (max-width: 900px) 
+{
+.titlet {font-size: 30px;}
+
+.blimg
+{
+width: 400px; 
+height: 300px; 
+}
+
+a.button24 {float: left; margin-left: 10px;}
+.modal-body {padding-bottom: 80px;}
+
+}
+/*---------------------------850---------------------------------------*/
+
+@media screen and (max-width: 850px) 
+{
+.titlet {font-size: 25px;padding-top: 5px; line-height: 20px;}  
+.blimg
+{
+width: 350px; 
+height: 250px;
+top: 0px; 
+}
+.close-mod
+{display: none;}
+/*.zakazbtn
+{
+margin-top: 20px; 
+margin-bottom: 20px; 
+font-size: 25px;
+position: relative;
+left: -120px;
+}*/
+.limg
+{display: none;}
+
+.price
+{
+background-image: url(../img/rama.png);
+background-size: 100% 104%;
+width: 150px; 
+height: 100px; 
+padding-top: 0px; 
+margin-bottom: -70px;/*-90*/
+/*border: 1px solid black;*/
+}
+.rub
+{
+top: 60px;
+}
+.p55
+{
+top: 30px;
+font-size: 30px; 
+margin-left: 15px; 
+}
+.price p
+{
+top: 63px; 
+margin-left: 60px; 
+font-size: 15px;   
+}
+.modal-body 
+{
+padding-bottom: 80px;
+}
+}
+
+/*---------------------------780---------------------------------------*/
+
+@media screen and (max-width: 780px) 
+{
+.titlet{font-size: 20px; line-height: 20px;}
+.blimg {top: 0px;}
+.price{margin-left: 50%;}
+
+}
+
+/*---------------------------700---------------------------------------*/
+@media screen and (max-width: 700px) 
+{
+.modal-box 
+{
+width: 60%;
+}
+}
+/*---------------------------650---------------------------------------*/
+
+
+/*---------------------------600---------------------------------------*/
+
+@media screen and (max-width: 600px) 
+{
+.modal-box 
+{
+width: 65%;
+}
+}
+
+
+/*---------------------------550---------------------------------------*/
+@media screen and (max-width: 550px) 
+{
+.blimg 
+{
+    width: 300px;
+    height: 200px;
+    margin-bottom: -20px;
+}
+
+.titlet
+{
+font-size: 15px; 
+}
+.price
+{
+margin-left: 45%;
+}
+.zakazbtn
+{
+left: -80px;
+}
+
+}
+/*---------------------------500---------------------------------------*/
+@media screen and (max-width: 500px) 
+{
+.modal-box 
+{
+width: 70%;
+}
+.close-modal 
+{
+padding-top: 5px;
+margin-bottom: -5px;
+margin-right: -15px;
+}
+a.button24 {padding: .5em 1em;}
+}
+/*---------------------------450---------------------------------------*/
+@media screen and (max-width: 450px) 
+{
+.modal-box 
+{
+width: 80%;
+}
+}
+
+/*---------------------------400---------------------------------------*/
+@media screen and (max-width: 400px) 
+{
+.blimg 
+{
+    width: 250px;
+    height: 150px;
+    margin-bottom: -10px;
+}
+.modal-header 
+{
+padding-bottom: 0px;
+}
+.zakazbtn 
+{
+    margin-bottom: 10px;
+    font-size: 25px;
+    width: 100px;
+}
+
+}
+
+/*---------------------------350---------------------------------------*/
+@media screen and (max-width: 350px) 
+{
+.modal-box 
+{
+width: 85%;
+}
+.blimg 
+{
+width: 200px;
+height: 100px;
+margin-bottom: 10px;
+}
+.titlet{line-height: 15px;}
+
+}
+/*---------------------------300---------------------------------------*/
+@media screen and (max-width: 300px) 
+{
+.modal-box 
+{
+width: 90%;
+}
+
+.price
+{
+margin-left: 0%;
+margin-bottom: 0px;
+}
+
+a.button24 {margin-left: 30%;}
+
+}
+
+
+/**/

@@ -1,0 +1,32 @@
+.go-up,
+.go-down {
+  display:none;
+  position: fixed; /*позиционируем*/
+  right: 5px; /*указываем положение, если слева - left*/
+  z-index: 9999; /*показываем поверх все элементов на странице*/
+  background: #4F4F4F;
+  border: 2px solid #ccc; /*толщина, стиль, цвет рамки*/
+  box-shadow: 0 10px 0.3em -0.1em rgba(0,0,6,0.5); /*тень*/
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff; /*цвет стрелок*/
+  text-align: center; /*выравнивание*/
+  font-size: 42px; /*размер стралок*/
+  text-shadow: 0 1px 2px #000, 0 0 10px #E0F1FF;
+  opacity: .5; /*прозрачность*/
+  padding: 2px 2px 2px 2px; /*отступы внутри*/
+  margin-bottom: 5px; /*отступ снизу (можно не указывать)*/
+  width: 48px; /*ширина кнопки*/
+  height: 48px; /*высота кнопки*/
+}
+.go-up {
+  bottom: 65px; /*положение от низа окна браузера*/
+}
+.go-down {
+  bottom: 5px;
+}
+/*стили при наведении курсора*/
+.go-down:hover,
+.go-up:hover {
+  opacity: 1;
+}
